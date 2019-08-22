@@ -1,0 +1,125 @@
+
+#enfant_content{
+    .section {
+        margin-top:50px;
+        position:relative;
+        .left{
+            img{
+                max-width:450px;
+            }
+            .jaune{
+                position:relative;
+                background-color:$yellow;
+                color:white;
+                width:400px;
+                height:380px;
+                top:-55px;
+                padding:50px;
+                font-size:22px;
+                h2{
+                    @include fontstyle(50px,400,$other-font);
+                    margin-bottom:20px;
+                }
+                
+            }
+            .zonerdv{
+                width:400px;
+                 height:380px;
+                top:-55px;
+                padding:30px;
+                @include fontstyle(50px,400,$other-font);
+                span{
+                    color:$yellow;
+                }
+                p{
+                    margin-bottom:30px;
+                }
+                .pill{
+                    @include fontstyle(22px,400);
+                    color:black;
+                    padding:10px;
+                    border:2px solid $yellow;
+                    -webkit-border-radius:100px;
+                    -moz-border-radius:100px;
+                    border-radius:100px;    
+                    i{
+                            color:$yellow;
+                    }
+                    &:hover{
+                        color:white !important;
+                        text-decoration:none;
+                        background: $yellow;
+                        border:2px solid $yellow;
+                        i{
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+        &:first-child .left{
+            margin-top:-160px;
+        }
+        .right{
+            padding-left:150px;
+            .h1{
+                @include fontstyle(20px,400);
+                text-transform: uppercase;
+                color:$yellow;
+            }
+            h2{
+                @include fontstyle(50px,400,$other-font);
+            }
+            .contenu{
+                line-height:1.2;
+                margin-top:20px;
+                margin-bottom:20px;
+                @include fontstyle(25px,300);
+                h3{
+                    color:$yellow;
+                    font-weight:400;
+                    @include fontstyle(25px,400);
+                    margin-top:20px;
+                    margin-bottom:20px;
+                }
+                em{
+                    color:$yellow;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    #enfant{
+        #enfant_content .left{
+            max-width:320px;
+            img{
+                max-width:320px;
+            }
+            .jaune{
+                max-width:320px;
+            }
+            margin-left:-50px !important;
+            .zonerdv{
+                max-width:320px;
+                height:280px !important;
+                font-size:30px !important;
+                .pill{
+                    font-size:15px;
+                    width:80%;
+                    margin:0 auto;
+                }
+            }
+            margin-bottom:0px !important;
+        }
+        .right{
+            padding-left:0px !important;
+            h2{
+                font-size:35px !important;
+            }
+            .contenu{
+                font-size:15px !important;
+            }
+        }
+    }
+}

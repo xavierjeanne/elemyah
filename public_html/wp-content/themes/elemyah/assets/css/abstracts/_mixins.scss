@@ -1,0 +1,50 @@
+@mixin pill($border,$border_on){
+    border:2px solid $border;
+    -moz-border-radius:100px;
+    border-radius:100px;
+    -webkit-border-radius:100px;
+    &:before{
+        content:url(../img/arrow.png);
+        padding-right:10px;
+    }
+    &:hover{
+        color:white !important;
+        text-decoration:none;
+        background: $border_on;
+        border:2px solid $border_on;
+        &:before{
+            content:url(../img/arrow-blanche.png);
+        }
+    }
+}
+@mixin band{
+    display:block;
+    width:130px;
+    height:8px;
+    background-color:$yellow;
+    position:absolute;
+}
+@mixin fontstyle($size,$weight,$family:$main-font){
+    font-family:$family;
+    font-size:$size;
+    font-weight:$weight;                                       
+}
+@mixin link_extend($margin-top,$margin-left,$margin-right,$margin-bottom){
+    [data-expand-target]{
+        overflow:hidden;
+        position:relative;
+    }
+    [data-expand-link]:after{
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:10;
+        margin-top:$margin-top;
+        margin-left:$margin-left;
+        margin-right:$margin-right;
+        margin-bottom:$margin-bottom;
+    }
+}

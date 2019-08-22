@@ -1,0 +1,22 @@
+#slider{
+	height:250px;
+	
+	.vignette{
+
+		display:inline-block;
+		float:left;
+		border-top:1px outset #DCDCDC;
+		img{
+			width:150px;
+			height:150px;
+			margin:70px;
+			-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+			filter: grayscale(100%); /* Firefox */ 
+			&:hover{
+				-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+				filter: grayscale(0%); /* Firefox */ 
+			}
+		}
+	}
+	
+}

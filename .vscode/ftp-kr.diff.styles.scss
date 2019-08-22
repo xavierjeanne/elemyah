@@ -1,0 +1,485 @@
+@import 'tools/meyer-reset';
+@import 'tools/slick';
+
+$main-font:'Barlow';
+$other-font:'Caveat';
+$yellow:#f39609;
+
+body{
+    font-family:$main-font;
+}
+
+/*************************************
+**                                  **
+**          HEADER                  **
+**                                  **
+*************************************/
+
+.navbar{
+    background-color:white;
+    border-bottom:0px !important;
+    height:100px;
+    ul{
+        padding:25px;
+    }
+    #menu-menu1{
+        li {
+            a{
+                height:95px;
+                font-size:22px;
+                color: #6e6e6e;
+                &:hover{
+                    border-bottom:4px solid $yellow;
+                    color:$yellow;
+                }
+            }
+
+            &:nth-child(1) a{
+                color:black;
+                &:hover{
+                    color:$yellow;
+                }
+            }
+            
+            &:nth-child(2) a{
+                color:black;
+                &:hover{
+                    color:$yellow;
+                }
+            }
+            &:nth-child(3) a{
+                color:black;
+                &:hover{
+                    color:$yellow;
+                }
+            }
+            
+            &:last-child a{
+                height:50px;
+                border-radius:30px;
+                border:2px solid $yellow;
+                color:black;
+                padding:15px;
+                i{
+                    padding-right:20px;
+                }
+                &:hover{
+                    color:white;
+                    background-color:$yellow;
+                    text-decoration:none;
+                }
+               
+            }
+        }
+    }
+}
+
+/*************************************
+**                                  **
+**          ACCEUIL                 **
+**                                  **
+*************************************/
+
+#accueil{
+    #accueil_top{
+        height:534px;
+        text-align:center;
+        position:relative;
+        .in_container{
+            color:white;
+            position:absolute;
+            top:125px;
+            left:30%;
+            & .first{
+                font-size:60px;
+                font-family:$other-font;
+                span{
+                    color:$yellow;
+                }
+            }
+            ul li{
+                display:inline-block;
+                border-right:2px solid $yellow;
+                font-size:30px;
+                font-weight:300;
+                margin-top:30px;
+                margin-bottom:50px;
+                padding-left:40px;
+                padding-right:40px;
+                &:last-child{
+                    border-right:0;
+                }
+            }
+            a.pill{
+                font-size:30px;
+                font-size:400;
+                border-radius:30px;
+                border:2px solid white;
+                color:white;
+                padding:15px;
+                i{
+                    padding-right:20px;
+                }
+                &:hover{
+                    color:white;
+                    background-color:$yellow;
+                    text-decoration:none;
+                    border:2px solid $yellow;
+                }
+            }
+        }
+    }
+    #accueil_main{
+        margin-top:75px;
+        margin-bottom:75px;
+        #accueil_main_who{
+            margin-bottom:110px;
+            .txt{
+                position:absolute;
+                padding:50px;
+                background-color:white;
+                width:500px;
+                margin-top:-90px;
+                h1{
+                    font-family:$other_font;
+                    font-size: 50px;
+                    font-weight: 400;
+                }
+                p{
+                    font-size:20px;
+                    margin-top:40px;
+                    margin-bottom:40px;
+                    font-weight:400;
+                }
+                .orange{
+                    font-size:25px;
+                     color:$yellow;
+                }
+                .pill{
+                    border-radius:30px;
+                    border:2px solid $yellow;
+                    padding:10px;
+                    font-size:20px;
+                    font-weight:400;
+                    color:black;
+                    &:hover{
+                        color:white;
+                        background-color:$yellow;
+                        text-decoration:none;
+                    }
+                }
+                .bordereau{
+                    display:block;
+                    width:130px;
+                    height:8px;
+                    background-color:$yellow;
+                    position:absolute;
+                    right:0;
+                    top:0;
+                }
+            }
+            .link{
+                margin-left:75px;
+                width:515px;
+                position:relative;
+                .titre{
+                    position:absolute;
+                    right:0;
+                    background-color:white;
+                    width:235px;
+                    height:130px;
+                    padding:20px;
+                    a{
+                    font-size:28px;
+                    color:black;
+                    text-decoration:none;
+                    span{
+                        font-family:$other_font;
+                        font-size:50px;
+                        font-weight:400;
+                        color:$yellow;
+                        }
+                    }
+                }
+            }
+            .first{
+                margin-bottom:60px;
+                .titre{
+                    top:325px;
+                }
+                .bordereau{
+                    display:block;
+                    width:130px;
+                    height:8px;
+                    background-color:$yellow;
+                    position:absolute;
+                    bottom:0;
+                    left:-35px;
+                }
+            }
+            .second{
+                .titre{
+                    top:130px;
+                }
+                .bordereau{
+                    display:block;
+                    width:130px;
+                    height:8px;
+                    background-color:$yellow;
+                    position:absolute;
+                    bottom:0;
+                    left:-35px;
+                }
+            }
+        }
+        #accueil_main_bandeau{
+            height:380px;
+            position:relative;
+            .container{
+                position:absolute;
+                top:100px;
+                right:0;
+                color:white;
+                .sig{
+                    margin-top:20px;
+                    font-family:$other_font;
+                    font-size:30px;
+                    font-weight:400;
+                }
+                .quote{
+                    font-size:40px;
+                    font-weight:200;
+                }
+            }
+        }
+    }
+}
+
+/*************************************
+**                                  **
+**          PARENT                  **
+**                                  **
+*************************************/
+
+#parent_top{
+    text-align:center;
+    color:white;
+    .in{
+        padding-top:120px;
+        h1 {
+            font-size:30px;
+            font-weight:300;
+            span{
+            font-family:$other-font;
+            font-size:60px;
+            font-weight:400;
+            }
+        }
+    }
+}
+#parent_cont{
+    margin-top:-110px;
+    margin-bottom:70px;
+    .case{
+        height:510px;
+        .titre{
+            position:absolute;
+            right:0;
+            top:290px;
+            background-color:white;
+            width:235px;
+            padding:20px;
+            a{
+                font-size:28px;
+                color:black;
+                text-decoration:none;
+                span{
+                    font-family:$other_font;
+                    font-size:45px;
+                    font-weight:400;
+                    color:$yellow;
+                    }
+                em{
+                    font-size:15px;
+                }
+                i{
+                    color:$yellow;
+                }
+            }
+            .bordereau{
+                display:block;
+                width:130px;
+                height:8px;
+                background-color:$yellow;
+                position:absolute;
+                bottom:0;
+                left:-35px;
+            }
+        }
+    }
+}
+
+/*************************************
+**                                  **
+**          PAGE                    **
+**                                  **
+*************************************/
+
+#page_top{
+    height:320px;
+    text-align:center;
+    color:white;
+    .in{
+        padding-top:50px;
+        h1 {
+            font-size:30px;
+            font-weight:300;
+            span{
+            font-family:$other-font;
+            font-size:60px;
+            font-weight:400;
+            }
+        }
+    }
+}
+#page_main{
+    height:380px;
+    position:relative;
+    top:-110px;
+    left:-95px;
+    .photo{
+        width:380px;
+    }
+    .txt_jaune{
+        height:380px;
+        margin-left:-5px;
+        background-color:$yellow;
+        color:white;
+        padding-top:50px;
+        padding-left:100px;
+        padding-right:100px;
+        font-family:$other_font;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 45px;
+    }
+    .bordereau{
+        display:block;
+        width:130px;
+        height:8px;
+        background-color:$yellow;
+        position:absolute;
+        bottom:90px;
+        right:-20px;
+    }
+}
+#page_content{
+   position:relative;
+   top:-200px;
+   background-color:white;
+   padding:50px;
+   p{
+       margin-top:50px;
+       margin-bottom:50px;
+       font-family:$main_font;
+       &.caveat{
+           font-family:$other_font;
+       }
+       &.barlow{
+           font-family:$main_font;
+       }
+   }
+}
+
+/*************************************
+**                                  **
+**          FOOTER                  **
+**                                  **
+*************************************/
+
+footer{
+    height:615px;
+    #lefooter{
+        padding-top:110px;
+        padding-left:50px;
+        padding-right:50px;
+        .row{
+            margin-top:50px;
+        }
+        .titre{
+            margin-left:100px;
+            color:white;
+            font-family:$other_font;  
+            font-weight:400;
+            font-size:50px;
+            span{
+                color:$yellow;
+            }  
+        }
+        .sig{
+             margin-left:100px;
+            font-family:$main_font;
+            font-size:22px;
+            font-weight:300;
+            color:white;
+        }
+        a.pill{
+            font-size:20px;
+            font-size:400;
+            border-radius:30px;
+            border:2px solid white;
+            color:white;
+            padding:15px;
+            i{
+                padding-right:20px;
+            }
+            &:hover{
+                color:white;
+                background-color:$yellow;
+                text-decoration:none;
+                border:2px solid $yellow;
+            }
+        }
+        .menu {
+            margin-top:50px;
+            a{
+                color:white;
+                line-height:39px;
+                font-size:20px;
+                &:hover{
+                    color:$yellow;
+                    text-decoration:none;
+                }
+                &:before{
+                    content:"+";
+                    color:$yellow;
+                }
+            }
+        }
+        .menu2{
+            margin-top:50px;
+            a{
+                color:white;
+                line-height:39px;
+                font-size:22px;
+                &:hover{
+                    color:$yellow;
+                    text-decoration:none;
+                }
+            }
+        }
+    }
+    #subfooter{
+        margin-top:100px;
+        color:white;
+        font-size:18px;
+        a{
+            padding-left:50px;
+            color:white;
+            &:hover{
+                text-decoration:none;
+                color:$yellow;
+            }
+        }
+    }
+}

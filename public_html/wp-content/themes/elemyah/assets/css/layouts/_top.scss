@@ -1,0 +1,32 @@
+/*
+Header des pages template
+*/
+#top{
+	height:535px;
+    background-repeat: no-repeat;
+    background-size:cover;
+	text-align:center;
+    color:white;
+    .in{
+        padding:100px;
+        h1 {
+            text-shadow: 2px 2px 4px #000;
+            @include fontstyle(30px,300);
+            span{
+            @include fontstyle(60px,400,$other-font);
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .in{
+        padding-left:10px !important;
+        padding-right:10px !important;
+        h1{
+            font-style:20px !important;
+            span{
+                font-style:40px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+#actualite{
+	.actu{
+		margin-bottom:30px;
+	}
+	#pagination{
+		margin-bottom:60px;
+		width:60%;
+		margin-left:45%;
+		@include fontstyle(20px, 00);
+		span,a{
+			display:inline-block;
+			width:38px;
+			border:1px solid black;
+			color:black;
+			padding:10px;
+			text-align:center;
+			transition:0.5s;
+			&:hover,&.current{
+				text-decoration: none;
+				color:white !important;
+				background-color:$yellow;
+				border:1px solid $yellow;
+			}
+		}
+	}
+}
+#article{
+	.actu{
+		@include link_extend(-275px,-360px,-50px,-40px);
+	}
+	
+}
+@media(max-width: 768px){
+	#actualite{
+		#pagination{
+			width:100% !important;
+			margin-left:30% !important;
+		}
+	}
+}

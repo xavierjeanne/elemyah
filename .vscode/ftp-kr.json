@@ -1,0 +1,16 @@
+{
+    "host": "188.166.116.67",
+    "username": "elemyahftp",
+    "password": "87zvbA9B",
+    "remotePath": "/",
+    "protocol": "sftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

@@ -1,0 +1,26 @@
+@import 'tools/meyer-reset';
+@import 'tools/slick';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'layouts/navbar';
+@import 'layouts/footer';
+@import 'layouts/lies';
+@import 'layouts/slider';
+@import 'layouts/bandeau';
+@import 'layouts/article';
+@import 'layouts/top';
+@import 'pages/accueil';
+@import 'pages/parent';
+@import 'pages/page';
+@import 'pages/single';
+@import 'pages/enfant';
+@import 'pages/contact';
+@import 'pages/actualite';
+@import 'pages/404';
+@import 'pages/mentions';
+
+
+body{
+    font-family:$main-font;
+}
+

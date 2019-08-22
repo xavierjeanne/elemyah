@@ -1,0 +1,219 @@
+#accueil{
+    #accueil_top{
+        .in{
+            text-align:center;
+            color:white;
+            width:60%;
+            margin:auto;
+            .first{
+                padding-top:150px;
+                @include fontstyle(60px,400,$other-font);
+                span{
+                    color:$yellow;
+                }
+            }
+            ul{
+                padding-top:25px;
+                padding-bottom:50px;
+                li{
+                    display:inline-block;
+                    border-right:2px solid $yellow;
+                    @include fontstyle(30px,300);
+                    padding-left:20px;
+                    padding-right:20px;
+                    &:last-child{
+                        border-right:0;
+                    }
+                }
+            }
+            a.pill{
+                color:white;
+                @include fontstyle(30px,400);
+                @include pill(white,$yellow);
+                padding:15px;
+            }
+        }
+    }
+    #accueil_main{
+        margin-top:75px;
+        #accueil_main_who{
+            .photo{
+                width:550px;
+                height:510px;
+            }
+            .photo img{
+               background-size:cover;
+            }
+            margin-bottom:110px;
+            .txt{
+                padding:60px;
+                position:relative;
+                background-color:white;
+                width:500px;
+                margin-top:-90px;
+                h1{
+                    @include fontstyle(50px,400,$other-font);
+                }
+                p{
+                    margin-top:40px;
+                    margin-bottom:40px;
+                    @include fontstyle(20px,300)
+                }
+                .orange{
+                    color:$yellow;
+                    font-style:italic;
+                    @include fontstyle(25px,400);
+                }
+                .pill{
+                   
+                    padding:10px;
+                    @include fontstyle(20px,400);
+                    color:black;
+                    @include pill($yellow,$yellow);
+                }
+                .band{
+                    @include band;
+                    right:0;
+                    top:0;
+                }
+            }
+            .link{
+                width:515px;
+                margin-left:75px;
+                position:relative;
+                .in{
+                    width:510px;
+                }
+                .titre{
+                    position:absolute;
+                    right:0;
+                    background-color:white;
+                    width:235px;
+                    height:130px;
+                    padding:20px;
+                    a{
+                    font-size:28px;
+                    color:black;
+                    text-decoration:none;
+                    span{
+                        @include fontstyle(50px,400,$other-font);
+                        color:$yellow;
+                        }
+                    }
+                }
+            }
+            .first{
+                margin-bottom:60px;
+                @include link_extend(-325px,-280px,0px,-55px);
+                .titre{
+                    top:325px;
+                }
+                .band{
+                    @include band;
+                    bottom:0;
+                    left:-35px;
+                }
+            }
+            .second{
+                @include link_extend(-130px,-280px,0px,-120px);
+                .titre{
+                    top:130px;
+                }
+                .band{
+                    @include band;
+                    bottom:0;
+                    left:-35px;
+                }
+            }
+        }
+        #accueil_main_bandeau{
+            height:380px;
+            margin-bottom:75px;
+            position:relative;
+            .container{
+                position:absolute;
+                top:100px;
+                right:0;
+                color:white;
+                .sig{
+                    margin-top:20px;
+                    @include fontstyle(30px,400);
+                }
+                .quote{
+                    @include fontstyle(40px,300);
+                    font-style:italic;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    #accueil_top{
+        .in{
+            width:100% !important;
+            padding:0 !important;
+            .first{
+                font-size:35px !important;
+            }
+            ul li{
+                font-size:22px !important;
+            }
+            a.pill{
+                font-size:16px !important;
+            }
+        }
+    }
+    #accueil_main_who{
+        max-width:320px;
+        margin-bottom:30px !important;
+        padding:0;
+        .photo{
+            max-width:320px !important;
+        }
+        .who{
+             margin-left:-15px;
+            .photo img{
+                width:320px;
+            }
+        }
+        .txt{
+            max-width:320px;
+            padding-top:0px !important;
+            padding-left:20px !important;
+            padding-right:10px !important;
+            h1{
+                font-size:35px !important;
+            }
+            .band{
+                top:-98px !important;
+            }
+        }
+        .link{
+            .titre{
+            left:0;
+            right:50px;
+            }
+            max-width:320px;
+            margin-left:-15px !important;
+            .in{
+                width:320px !important;
+            }
+        }
+    }
+    #accueil_main_bandeau{
+        .container{
+            .quote{
+                font-size:30px !important;
+            }
+        }
+    }
+    #article{
+        max-width:320px;
+        padding-left:0px !important;
+        .band{
+            top:200px !important;
+            right:0px !important;
+        }
+    }
+}

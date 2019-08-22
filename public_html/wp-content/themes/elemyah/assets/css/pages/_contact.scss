@@ -1,0 +1,97 @@
+#contact_formulaire{
+	margin-top:-110px;
+	background-color: white;
+	padding:50px;
+	font-color:#6e6e6e;
+	@include fontstyle(18px,300);
+	input{
+		margin-top:10px;
+		margin-bottom:20px;
+		width:100%;
+		padding:10px;
+	}
+	.question{
+		color:$yellow;
+		@include fontstyle(30px,400,$other-font);
+	}
+	.right{
+		.wpcf7-list-item{
+			input{
+				display:block;
+				width:20px;
+				float:left;
+			}
+			.wpcf7-list-item-label{
+				display:inline-block;
+				padding-top:7px;
+				width:250px;	
+			}
+		}
+		.rgpd{
+			margin-top:15px;
+			input{
+				display:inline-block;
+			}
+			.wpcf7-list-item-label{
+				display:block;
+				width:100%;
+			}
+		}
+		.souhait{
+			display:block;
+			
+		}
+		textarea{
+			padding:10px;
+			margin-top:10px;
+			width:100%;
+		}
+	}
+	.submit{
+		text-align:center;
+		margin:auto;
+		margin-top:15px;
+		width:50%;
+		input{
+			color:white;
+			border-radius:100px;
+			background-color:$yellow;
+			border:0;
+            padding:10px;
+            @include fontstyle(22px,400);
+		}
+	}
+}
+#contact_info{
+	height:370px;
+	margin-bottom:80px;
+	@include fontstyle(20px,400);
+	.txt_jaune{
+		background-color:$yellow;
+		height:370px;
+		padding-left:100px;
+		padding-top:80px;
+		padding-right:100px;
+		color:white;
+		h2{
+			@include fontstyle(45px,400,$other-font);
+		}
+		p{
+			margin-bottom:50px;
+		}
+	}
+}
+@media(max-width: 768px){
+	.wpcf7-list-item-label{
+		width:170px !important;
+	}
+    .submit{
+   		width:75% !important;
+		 input{
+		font-size:15px !important;
+		}
+    }
+    .question{
+    	font-size:25px !important;
+    }
+}

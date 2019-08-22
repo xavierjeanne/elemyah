@@ -1,0 +1,10 @@
+status_code:499 188.166.116.67 [31/Oct/2018:08:09:49 +0000] POST /wp-cron.php?doing_wp_cron=1540973388.9399070739746093750000 HTTP/1.1
+status_code:200 142.4.208.108 [31/Oct/2018:08:09:50 +0000] POST /wp-admin/admin-ajax.php HTTP/1.1
+status_code:200 188.166.116.67 [31/Oct/2018:08:10:02 +0000] POST /wp-admin/admin-ajax.php?action=wordfence_testAjax HTTP/1.1
+status_code:200 188.166.116.67 [31/Oct/2018:08:10:03 +0000] GET /wp-admin/admin-ajax.php?action=wordfence_doScan&isFork=0&scanMode=quick&cronKey=1265a4ed912ee25ea01f81fd7a6a2496 HTTP/1.1
+status_code:200 188.166.116.67 [31/Oct/2018:08:11:45 +0000] POST /wp-cron.php?doing_wp_cron=1540973505.0951490402221679687500 HTTP/1.1
+status_code:200 142.4.208.108 [31/Oct/2018:08:11:45 +0000] POST /wp-admin/admin-ajax.php HTTP/1.1
+status_code:200 142.4.208.108 [31/Oct/2018:08:13:45 +0000] POST /wp-admin/admin-ajax.php HTTP/1.1
+status_code:200 142.4.208.108 [31/Oct/2018:08:15:46 +0000] POST /wp-admin/admin-ajax.php HTTP/1.1
+status_code:200 142.4.208.108 [31/Oct/2018:08:17:45 +0000] POST /wp-admin/admin-ajax.php HTTP/1.1
+status_code:200 142.4.208.108 [31/Oct/2018:08:19:46 +0000] POST /wp-admin/admin-ajax.php HTTP/1.1

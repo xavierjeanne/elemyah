@@ -1,0 +1,21 @@
+.erreur{
+	p{
+		background-color:white;
+		width:50%;
+		margin:0 auto;
+		margin-top:200px;
+		padding:50px;
+		@include fontstyle(20px,300);
+		span{
+			@include fontstyle(35px,400,$other_font);
+			color:$yellow;
+		}
+	}
+}
+@media(max-width: 768px){
+    .erreur{
+    	p{
+    		width:80%;
+    	}
+    }
+}

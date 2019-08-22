@@ -1,0 +1,77 @@
+.navbar{
+    z-index:1;
+    border:0px !important;
+    background-color:white !important;
+    height:100px;
+        .navbar-brand{
+            float:none;
+            img{
+                margin-left:-50px;
+                padding-right:50px;
+            }
+        }
+        ul{
+            margin-top:25px;
+            li {
+                display:inline-block;
+                background-color:white !important;
+                a{
+                    height:95px;
+                    @include fontstyle(25px,400);
+                    color:black !important;
+                    &:hover{
+                        border-bottom:4px solid $yellow;
+                        color:$yellow !important;
+                     }
+                }
+                &:nth-child(1n+4) a{
+                    font-size:22px;
+                    color:#6e6e6e !important;
+                    &:hover{
+                        color:$yellow !important;
+                     }
+                }
+                &:last-child{
+                    a{
+                        height:60px;
+                        width:150px;
+                        @include pill($yellow,$yellow);
+                    }
+                }
+            &.current_page_item a:not([href*='contact']) {
+                border-bottom:4px solid $yellow;
+                color:$yellow !important;
+                }
+            }
+        }
+   }
+
+
+@media(max-width: 766px){
+    .navbar{
+        .navbar-brand img{
+            margin-left:50px; 
+        }     
+        ul{
+            margin-top:0px;
+            li{
+                display:block;  
+                height:60px;
+                &:last-child a{
+                    height:60px;
+                    width:100%;
+                    border:0px;
+                    &:hover{
+                        background-color:white;
+                        border:0px;
+                        border-bottom:0px ;
+                        color:$yellow !important;
+                        &:before{
+                            content:url(../img/arrow.png);
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}

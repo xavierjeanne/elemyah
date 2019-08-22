@@ -1,0 +1,37 @@
+
+#parent_cont{
+    margin-top:-110px;
+    .case{
+        @include link_extend(-500px,-320px,15px,-80px);
+        margin-bottom:75px;
+        height:510px;
+        .titre{
+            position:absolute;
+            right:0;
+            top:290px;
+            background-color:white;
+            width:235px;
+            padding:20px;
+            a{
+                font-size:28px;
+                color:black;
+                text-decoration:none;
+                span{
+                    @include fontstyle(45px,400,$other-font);
+                    color:$yellow;
+                    }
+                em{
+                    font-size:15px;
+                }
+                i{
+                    color:$yellow;
+                }
+            }
+            .band{
+               @include band;
+                bottom:0;
+                left:-35px;
+            }
+        }
+    }
+}
